@@ -1,0 +1,134 @@
+.Crossword-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://i.pinimg.com/564x/ea/e1/cc/eae1ccd7d179ca42d0cf699519e4bb16.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.crossword-main {
+   
+    margin-bottom:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1100px;
+    height: 800px;
+    border-radius: 7px;
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between grid/questions and buttons */
+ 
+}
+
+.crossword-content {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    /* Remove margin-top here to align the buttons properly */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px; 
+   
+
+}
+
+.button {
+    margin-top: 0px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #5b4fc3;
+}
+
+.main-heading {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #6c5ce7;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    
+}
+
+.row {
+    display: flex;
+}
+
+.cell-container {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    position: relative;
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.blocked {
+    background-color: black;
+}
+
+.small-digit {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 10px;
+}
+
+.heading-container {
+    margin-top: 20px;
+}
+
+.heading-text {
+    margin-bottom: 10px;
+    font-family: 'Roboto Mono', monospace;
+    color: #6c5ce7;
+}
+
+.questions-container {
+    margin-left: 20px;
+    width: 350px;
+}
+
+.question-text {
+    margin-bottom: 5px;
+}

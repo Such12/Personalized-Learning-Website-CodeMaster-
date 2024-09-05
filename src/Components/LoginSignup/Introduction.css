@@ -1,0 +1,38 @@
+.introduction-page {
+    text-align: center;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    min-height: 100vh;
+    background-image: url('C:\Users\sathv\OneDrive\Desktop\Such\PLW (2)\PLW\plw\src\Components\LoginSignup\bg2.jpeg');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .introduction-page h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #6c5ce7;
+  }
+  
+  .introduction-page p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+  
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .video-container iframe {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

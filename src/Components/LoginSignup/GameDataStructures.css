@@ -1,0 +1,210 @@
+/* GameDataStructures.css */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.snake-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://i.pinimg.com/564x/ea/e1/cc/eae1ccd7d179ca42d0cf699519e4bb16.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+    height: 685px;
+    margin-top: 20px;
+    width: 700px; /* Set a fixed width */
+    height: 685px; /* Set a fixed height */
+    max-width: 700px;
+    margin-bottom: 20px; 
+    position: relative; /* Added to enable absolute positioning of scores */
+}
+
+.game-details {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #B8C6DC;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    position: relative; /* Added to enable positioning of scores inside */
+    width: 100%; /* Ensure the game details bar takes up full width */
+    box-sizing: border-box;
+}
+
+.hint-snake {
+    font-size: 1.0rem;
+    color: #000000;
+    margin-bottom: 10px;
+    position: absolute; /* Absolute positioning to prevent movement with scores */
+    left: 50%; /* Center horizontally */
+    top: 20px; /* Position it towards the top */
+    transform: translateX(-50%);
+    margin-bottom: 40px;
+    
+}
+
+.score, .high-score {
+    font-size: 0.7rem;
+    color: #6c5ce7;;
+    position: absolute; /* Absolute positioning to fix their location */
+    font-family: 'Press Start 2P', cursive;
+    margin-bottom: 40px; 
+    margin-left: 10px;/* Adjust the top position as needed */
+}
+
+.score {
+    left: 10px; /* Fixed position from the left edge */
+}
+
+.high-score {
+    right: 10px; /* Fixed position from the right edge */
+}
+
+.play-board {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    width: 600px;
+    height: 500px;
+    background: #212837;
+    position: relative;
+    gap: 1px; 
+}
+
+.head {
+    width: 100%;
+    height: 100%;
+    background: #60CBFF;
+    border: 1px solid #000;
+    border-radius: 2px;
+    box-sizing: border-box; 
+    overflow: hidden; 
+}
+
+.food {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    width: 100%; /* Ensure food width fits within the grid cell */
+    height: 100%;
+    box-sizing: border-box;
+    text-align: center; /* Ensure the text is centered */
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: hidden; /* Ensure text doesn't overflow */
+    font-size: 0.6em; /* Further reduce font size to fit within the grid cell */
+    padding: 2px; /* Add slight padding to ensure better fit */
+    line-height: 1em; /* Adjust line height to fit inside the grid */
+    text-overflow: ellipsis; /* Handle any overflow with ellipsis */
+}
+
+.scorrect {
+    background-color: #6c186b;
+    border-radius: 2px;
+    width: fit-content;
+    height: max-content;
+    font-size: 0.8em;
+}
+
+.sincorrect {
+    background-color: #6c186b;
+    border-radius: 2px;
+    width: fit-content;
+    height: max-content;
+    font-size: 0.8em;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.controls i {
+    background-color: #6c5ce7;
+    color: #ffffff;
+    border-radius: 5px; /* Changed from 50% to 5px for box shape */
+    padding: 15px;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center text within the box */
+    display: flex; /* Use flexbox to center content inside */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    
+}
+
+/* Keep hover and active states as is */
+.controls i:hover {
+    background-color: #4834d4;
+    transform: scale(1.1);
+}
+
+.controls i:active {
+    background-color: #524892;
+    transform: scale(1);
+}
+.game-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure the modal appears above other content */
+}
+
+.game-modal.show {
+    display: flex;
+}
+
+.content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.content img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+.play-again {
+    background-color: #6c5ce7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.play-again:hover {
+    background-color: #4834d4;
+}

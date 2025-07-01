@@ -23,7 +23,6 @@ CodeMaster is a web-based personalized learning platform designed to make progra
 
 - Node.js and npm installed
 - Firebase project configured
--
 
 ### Installation
 
